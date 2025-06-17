@@ -1,3 +1,7 @@
+body{
+    background-color: aliceblue;
+}
+
 .gameBox{
     margin: 10px;
     width: auto;
@@ -5,36 +9,37 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.434);
 }
 
-
 .gameText{
-    border: 1px solid;
     padding: 10px;
     width: auto;
     height: 500px;
     margin: 15px;
     text-align: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.434);
+    background-color: antiquewhite;
 
 }
 
 .playerInfo{
-    border: 1px solid;
     padding: 10px;
     margin: 15px;
     height: auto;    
     width: auto;
     text-align: left;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.434);
+    background-color: antiquewhite;
 
 }
 
 .playerActions{
-    border: 1px solid;
     padding: 10px;
     margin: 10px;
     height: auto;
     width: auto;
     text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.434);
+    background-color: antiquewhite;
+
 }
 
 .playerButtons{
@@ -43,4 +48,37 @@
     margin: 5px;
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.382);
+    background-color: rgba(255, 255, 255, 0.293);
+    transition: 0.1s;
+}
+
+
+.playerButtons:hover{
+    background-color: rgba(255, 255, 255, 0.685);
+    transition: 0.1s;
+}
+
+.playerButtons:active{
+    background-color: rgba(192, 192, 192, 0.685);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.721);
+    transition: 0.1s;
+}
+
+.introBox{
+    text-align: center;
+}
+
+.introName{
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-wrap: auto;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
+}
+.introStart{
+    border: none;
+    padding: 10px;
+    margin: 10px;
 }
