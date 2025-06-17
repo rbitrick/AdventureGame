@@ -1,0 +1,46 @@
+.gameBox{
+    margin: 10px;
+    width: auto;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.434);
+}
+
+
+.gameText{
+    border: 1px solid;
+    padding: 10px;
+    width: auto;
+    height: 500px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.434);
+
+}
+
+.playerInfo{
+    border: 1px solid;
+    padding: 10px;
+    margin: 15px;
+    height: auto;    
+    width: auto;
+    text-align: left;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.434);
+
+}
+
+.playerActions{
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.playerButtons{
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.382);
+}
