@@ -18,13 +18,22 @@ const pineTreeIsland = new Map("Pine Tree Island","a pine tree island with a pin
 const endOfDriveWay = new Map("End of driveway","a concerete driveway with a huge funny smelling bush", "Sniff mailbox post", ["startingMap", "pineTreeIsland","pebblesFrontYard"])
 const pebblesFrontYard = new Map("Neighbors front yard","a smaller tree island with chopped logs, and a white Mustang in a different driveway", "Check out open garage", ["startingMap", "endOfDriveWay"])
 const gateToBackYard = new Map("Gate to backyard","a patch of grass and a chain link fence/gate with a hole just big enough for you to fit through", "Harass Chewie (The neighbors dog)", ["startingMap", "pineTreeIsland"])
+const mainBackYard = new Map("Main Backyard","a yard of overgrown grass littered with dog poop everywhere!", "Sniff Poop", ["oldShed", "gateToBackYard","backDeck","underDeck"])
+const oldShed = new Map("Old Shed","an old shed the smells like mildew and is filled with old lawn decorations", "Lay down in old dog cage", ["mainBackYard"])
+const backDeck = new Map("Back deck","a nice new deck with a grill, and patio furniture", "Lay in patio chair", ["mainBackYard"])
+const underDeck = new Map("Under Deck","a pile of leaves and construction materials and a mysterious door in to the crawlspace", "Check out crawl space", ["mainBackYard"])
+
 
 const allMaps = {
     startingMap,
     pineTreeIsland,
     endOfDriveWay,
     pebblesFrontYard,
-    gateToBackYard
+    gateToBackYard,
+    mainBackYard,
+    oldShed,
+    backDeck,
+    underDeck
 };
 
 let currentMap;
@@ -55,6 +64,10 @@ function init(name){
 
 function explore(){
     clearPlayerActions();
+    if(player1.tades >= 10){
+        gameOver(win)
+        return;
+    }
     
     if(firstPlay === true){
         alert(`Oh no! Freya got snatched up by mom and is being snuggled!
@@ -89,6 +102,16 @@ function explore(){
         itemDo(currentMap.name)
     }
     document.getElementById("playerActions").appendChild(btn)
+}
+
+function gameOver(status){
+    if(status === "win"){
+        gameText.innerText = 
+        `
+        You've found all of Freya's Tades! Thank you for your help! 
+        `
+    }
+
 }
 
 function itemDo(item){
