@@ -5,6 +5,7 @@ body{
 .gameBox{
     margin: 10px;
     width: auto;
+    height: auto;
     border: 1px solid;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.434);
 }
@@ -12,7 +13,7 @@ body{
 .gameText{
     padding: 10px;
     width: auto;
-    height: 500px;
+    height: auto;
     margin: 15px;
     text-align: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.434);

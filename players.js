@@ -3,7 +3,7 @@ export class Player{
         this.name = name;
         this.health = health;
         this.mana = mana;
-        this.tades = tades
+        this.tades = tades;
     }
 
     getHealth(){
@@ -17,5 +17,9 @@ export class Player{
 
     updateMana(manaChng){
         this.mana = this.mana + manaChng
+    }
+
+    updateTades(tadeChng){
+        this.tades = this.tades + tadeChng
     }
 }
