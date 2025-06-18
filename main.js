@@ -55,16 +55,6 @@ const allMonsters = [
 let player1 = new Player(playerName, 100, 0, 0);
 
 
-window.playerDoSomething = function(playerName){
-
-    gameText.innerText = 
-    `
-    You stepped forward and were attacked by a ${zombie1.name}!
-    `
-    getAttackedIdiot(zombie1)
-    return;
-}
-
 function init(name){
     firstPlay === true;
     currentMap = startingMap;
