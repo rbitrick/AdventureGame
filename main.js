@@ -181,6 +181,13 @@ function itemDo(item){
             You sniff around and find a motorcycle and some old baby toys. Nothing interesting here
             `
             break;
+        //Issue #3 - no patio chair action
+        case "Back deck":
+            gameText.innerText = 
+            `
+            You lay down and have a nice cat nap in the sun on the patio chair.
+            `
+            break;
 
     }
 }
