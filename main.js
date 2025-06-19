@@ -173,7 +173,14 @@ function itemDo(item){
             } else if (currentMap.actionComplete > 0){
                 gameText.innerHTML = "You hear more rats scurring around, better get out of here!"
                 break;                
-            }                                                    
+            }      
+        //Issue #4 - no garage door action
+        case "Neighbors front yard":
+            gameText.innerText =
+            `
+            You sniff around and find a motorcycle and some old baby toys. Nothing interesting here
+            `
+            break;
 
     }
 }
