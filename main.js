@@ -64,7 +64,7 @@ function init(name){
 
 function explore(){
     clearPlayerActions();
-    if(player1.tades >= 13){ //issue #2 - update logic to find ALL the tades. Not a sufficent amount
+    if(player1.tades >= 15){ //issue #2 - update logic to find ALL the tades. Not a sufficent amount
         gameOver("win")
         return;
     }
