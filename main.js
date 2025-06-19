@@ -64,7 +64,7 @@ function init(name){
 
 function explore(){
     clearPlayerActions();
-    if(player1.tades >= 10){
+    if(player1.tades >= 15){ //issue #2 - update logic to find ALL the tades. Not a sufficent amount
         gameOver("win")
         return;
     }
@@ -173,7 +173,21 @@ function itemDo(item){
             } else if (currentMap.actionComplete > 0){
                 gameText.innerHTML = "You hear more rats scurring around, better get out of here!"
                 break;                
-            }                                                    
+            }      
+        //Issue #4 - no garage door action
+        case "Neighbors front yard":
+            gameText.innerText =
+            `
+            You sniff around and find a motorcycle and some old baby toys. Nothing interesting here
+            `
+            break;
+        //Issue #3 - no patio chair action
+        case "Back deck":
+            gameText.innerText = 
+            `
+            You lay down and have a nice cat nap in the sun on the patio chair.
+            `
+            break;
 
     }
 }
